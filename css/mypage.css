@@ -1,0 +1,36 @@
+/* 마이페이지 */
+.mypage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 70px;
+    display: flex;
+    background-color: red;
+}
+
+/* 사이드 바 */
+.mypage .side-bar {
+    position: relative;
+    width: 20%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+
+.mypage .side-bar .user-info {
+
+}   
+
+.mypage .side-bar p {
+
+}
+
+/* 컬렉션 */
+.mypage .collection {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}

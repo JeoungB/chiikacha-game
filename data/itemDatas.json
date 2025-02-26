@@ -1,0 +1,60 @@
+[
+    {
+        "id" : 0,
+        "name" : "스페셜 치이카와",
+        "img" : "./imgs/SSS-치이카와.png",
+        "grade" : "SSS",
+        "probability" : 1
+    },
+    {
+        "id" : 1,
+        "name" : "치이카와",
+        "img" : "./imgs/SS-치이카와.webp",
+        "grade" : "SS",
+        "probability" : 4
+    },
+    {
+        "id" : 2,
+        "name" : "우사기기",
+        "img" : "./imgs/SS-우사기.png",
+        "grade" : "SS",
+        "probability" : 5
+        
+    },
+    {
+        "id" : 3,
+        "name" : "하치와레",
+        "img" : "./imgs/SS-하치와레.png",
+        "grade" : "SS",
+        "probability" : 5
+    },
+    {
+        "id" : 4,
+        "name" : "풍뎅이",
+        "img" : "./imgs/S-풍뎅이.png",
+        "grade" : "S",
+        "probability" : 15
+    },
+    {
+        "id" : 5,
+        "name" : "A갑옷씨",
+        "img" : "./imgs/A-갑옷씨.webp",
+        "grade" : "A",
+        "probability" : 20
+    },
+    {
+        "id" : 6,
+        "name" : "갑옷씨1",
+        "img" : "./imgs/B-갑옷씨.webp",
+        "grade" : "B",
+        "probability" : 25
+    },
+    {
+        "id" : 7,
+        "name" : "갑옷씨2",
+        "img" : "./imgs/B-갑옷씨가방.webp",
+        "grade" : "B",
+        "probability" : 25
+    }
+
+]

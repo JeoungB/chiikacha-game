@@ -1,0 +1,24 @@
+@media screen and (max-width: 845px) {
+    header > .header-container {
+        padding: 0 10px 0 10px;
+    }
+
+    header ul li:not(:last-of-type) {
+        display: none;
+    }
+
+    header ul {
+        position: relative;
+        min-width: 100px;
+    }
+
+    header h1 {
+        position: relative;
+        left: 15px;
+    }
+    
+    .menu-trigger,
+    .menu-trigger span {
+        display: inline-block;
+    }
+}

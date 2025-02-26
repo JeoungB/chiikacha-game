@@ -1,0 +1,127 @@
+.cardGame {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 50vw;
+    max-width: 639px;
+    max-height: 540px;
+    min-width: 206px;
+    min-height: 172px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cardGame > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* 타이머 */
+.cardGame #timer {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    height: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cardGame #timer .time-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(30, 141, 252);
+}
+
+/* 카드 */
+.card-list {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    display: grid;
+    perspective: 1000px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-list .card {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    transition: .4s;
+    transform-style: preserve-3d;
+    
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: red;
+}
+
+.front img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 클릭 이벤트 방지 */
+    pointer-events: none;
+}
+
+.back {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+
+.back img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.stop-click {
+    pointer-events: none;
+}
+
+/* 알림 */
+.game-alert {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 50vw;
+    height: 100px;
+    max-width: 514px;
+    min-width: 157px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: antiquewhite;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.game-alert div {
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aqua;
+}

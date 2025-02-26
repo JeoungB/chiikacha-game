@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치이카와 가챠게임</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/headerMedia.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <link rel="stylesheet" href="/css/mypage.css" />
+</head>
+
+<body>
+    <main class="chiikacha">
+        <!-- 헤더 메뉴 -->
+        <header>
+            <div class="header-container">
+                <h1><a href="./index.html">chiikacha</a></h1>
+                <ul>
+                    <li class="game-button" role="button" tabindex="0">게임하기</li>
+                    <li role="button" tabindex="0"><a href="./mypage.html">마이페이지</a></li>
+                    <li id="point">
+                        <img src="./imgs/point.png" />
+                        <p id="game-point">0p</p>
+                    </li>
+                    <div class="menu-trigger" onkeydown="bugerMenuHandlerEnter(event)" onclick="bugerMenuHandlerClick()"
+                        role="button" tabindex="0" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 마이 페이지 -->
+        <section class="mypage">
+            <div class="side-bar">
+                <div class="user-info"></div>
+                <p>가챠 내역</p>
+            </div>
+            <div class="collection"></div>
+        </section>
+
+        <!-- 태플릿, 모바일 모달창 -->
+        <div class="menu-container">
+            <div class="menu" role="dialog">
+                <div class="head">
+                    <h1><a href="index.html">chiikacha</a></h1>
+                    <div class="close" onkeydown="closeMoalHandlerEnter(event)" onclick="closeMoalHandlerClick()"
+                        role="button" tabindex="0">X</div>
+                </div>
+    
+                <section class="user">
+                    <div class="profile">
+                        <img src="./imgs/profile.png" alt="프로필 이미지">
+                    </div>
+                    <p>테스트</p>
+                </section>
+    
+                <ul class="menu-list">
+                    <li>
+                        <a href="mypage.html">
+                            <img src="./imgs/menu-컬렉션.png" alt="메뉴 이미지">
+                            <p>마이 페이지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imgs/menu-게임.png" alt="메뉴 이미지">
+                            <p>게임하기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imgs/menu-수정.png" alt="메뉴 이미지">
+                            <p>프로필 수정</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./js/burgerMenu.js"></script>
+    <script type="text/javascript" src="./js/modal.js" defer></script>
+    <script type="text/javascript" src="./js/header.js" defer></script>
+</body>
+
+</html>

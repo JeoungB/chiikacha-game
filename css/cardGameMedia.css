@@ -1,0 +1,20 @@
+
+/* 테블릿 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .cardGame {
+        width: 613.8px;
+        height: 511.5px;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+    .cardGame {
+        width: 80vw;
+        height: 67vw;
+    }
+
+    .cardGame > h1 {
+        font-size: 1.5rem;
+    }
+}
