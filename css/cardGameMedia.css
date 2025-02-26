@@ -10,11 +10,17 @@
 /* 모바일 */
 @media all and (max-width: 767px) {
     .cardGame {
-        width: 80vw;
-        height: 67vw;
+        width: 93vw;
+        height: 85vw;
     }
 
     .cardGame > h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .game-alert {
+        font-size: 10px;
     }
 }
