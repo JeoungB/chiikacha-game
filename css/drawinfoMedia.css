@@ -46,10 +46,10 @@
 
 @media all and (max-width: 416px) {
     body {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .item-probability li p {
-        min-width: 110px;
+        min-width: 110px !important;
     }
 }
