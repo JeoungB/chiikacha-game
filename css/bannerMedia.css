@@ -1,17 +1,17 @@
 
 @media all and (max-width: 920px) {
     .slider-container {
-        width: 100% !important;
+        width: 100%;
     }
 
     #line-right_shadow {
-        background-image: linear-gradient(270deg, rgb(34 37 43) 5%, transparent 75%) !important;
-        width: 30% !important;
+        background-image: linear-gradient(270deg, rgb(34 37 43) 5%, transparent 75%);
+        width: 30%;
     }
 
     #line-left_shadow {
-        background-image: linear-gradient(90deg, rgb(34 37 43) 5%, transparent 75%) !important;
-        width: 30% !important;
+        background-image: linear-gradient(90deg, rgb(34 37 43) 5%, transparent 75%);
+        width: 30%;
     }
 }
 
