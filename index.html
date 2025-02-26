@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>치이카와 가챠게임</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/headerMedia.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/bannerMedia.css" />
+    <link rel="stylesheet" href="./css/drawInfo.css" />
+    <link rel="stylesheet" href="./css/drawInfoMedia.css" />
+    <link rel="stylesheet" href="./css/gameInfo.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
 </head>
+
 <body>
-    hi
+    <main class="chiikacha">
+        <!-- 헤더 메뉴 -->
+        <header>
+            <div class="header-container">
+                <h1><a href="./index.html">chiikacha</a></h1>
+                <ul>
+                    <li class="game-button" role="button" tabindex="0" data-link="game-info" onclick="gameMenuView(event)">게임하기</li>
+                    <li role="button" tabindex="0"><a href="./mypage.html">마이페이지</a></li>
+                    <li id="point">
+                        <img src="./imgs/point.png" />
+                        <p id="game-point">0p</p>
+                    </li>
+                    <div class="menu-trigger" onkeydown="bugerMenuHandlerEnter(event)" onclick="bugerMenuHandlerClick()"
+                        role="button" tabindex="0" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 슬라이드 배너 -->
+        <section class="banner">
+            <h2><span>try chiikacha!</span><br>먼작귀 가챠</h2>
+            <div id="line-left_shadow"></div>
+            <div class="slider-container">
+                <ul class="slider">
+                    <li class="slide"
+                        style="background: linear-gradient(135deg, rgba(255,254,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,254,0,1) 100%);">
+                        <img src="./imgs/SS-치이카와.webp" alt="캐릭터 이미지">
+                    </li>
+                    <li class="slide"
+                        style="background: linear-gradient(135deg, rgba(182,225,255,1) 0%, rgba(255,255,255,1) 50%, rgba(182,225,255,1) 100%);">
+                        <img src="./imgs/A-갑옷씨.webp" alt="캐릭터 이미지">
+                    </li>
+                    <li class="slide"
+                        style="background: linear-gradient(135deg, rgba(255,254,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,254,0,1) 100%);">
+                        <img src="./imgs/SS-하치와레.png" alt="캐릭터 이미지">
+                    </li>
+                    <li class="slide"
+                        style="background: linear-gradient(135deg, rgba(255,177,0,1) 0%, rgba(255,255,255,1) 50%, rgba(255,177,0,1) 100%);">
+                        <img src="./imgs/S-풍뎅이.png" alt="캐릭터 이미지">
+                    </li>
+                    <li class="slide"
+                        style="background: linear-gradient(135deg, rgba(167,167,167,1) 0%, rgba(255,255,255,1) 50%, rgba(167,167,167,1) 100%);">
+                        <img src="./imgs/B-갑옷씨.webp" alt="캐릭터 이미지">
+                    </li>
+                </ul>
+            </div>
+            <div id="line-right_shadow"></div>
+
+            <div class="draw-container">
+                <button type="button" id="one-draw">1회 뽑기</button>
+                <button type="button" id="five-draw">5회 뽑기</button>
+            </div>
+        </section>
+
+        <!-- 뽑기 아이템 정보 -->
+        <section class="draw-info">
+            <ul class="item-probability">
+                <li class="sss">
+                    <h3 data-content="SSS" style="color: #7f07ff;">SSS</h3>
+                    <ul class="card" id="sss">
+                        <img src="./imgs/purple-card.webp" alt="purplecard">
+                    </ul>
+                    <p>스페셜 SSS 카드! 확률 1%</p>
+                </li>
+                <li class="ss">
+                    <h3 data-content="SS" style="color: rgb(233, 233, 1);">SS</h3>
+                    <ul class="card">
+                        <li id="ss-card"><img src="./imgs/SS-치이카와.webp"></li>
+                        <li id="ss-card"><img src="./imgs/SS-하치와레.png"></li>
+                        <li id="ss-card"><img src="./imgs/SS-우사기.png"></li>
+                    </ul>
+                    <p>SS 카드! 확률 5%</p>
+                </li>
+                <li class="s">
+                    <h3 data-content="S" style="color: rgba(255,177,0,1);">S</h3>
+                    <ul class="card">
+                        <li><img id="s-card" src="./imgs/S-풍뎅이.png"></li>
+                    </ul>
+                    <p>S 카드! 확률 15%</p>
+                </li>
+                <li class="a">
+                    <h3 data-content="A" style="color: rgba(182,225,255,1);">A</h3>
+                    <ul class="card">
+                        <li><img id="a-card" src="./imgs/A-갑옷씨.webp"></li>
+                    </ul>
+                    <p>A 카드! 확률 20%</p>
+                </li>
+                <li class="b">
+                    <h3 data-content="B" style="color: rgba(167,167,167,1);">B</h3>
+                    <ul class="card">
+                        <li><img id="b-card" src="./imgs/B-갑옷씨.webp"></li>
+                        <li><img id="b-card" src="./imgs/B-갑옷씨가방.webp"></li>
+                    </ul>
+                    <p>B 카드! 확률 25%</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 게임 정보 -->
+        <section class="game-info" id="game-info">
+            <h2>먼작귀 게임</h2>
+            <ul class="game-list">
+                <li id="card-game"></li>
+                <li id="mole-game"></li>
+            </ul>
+        </section>
+
+        <!-- 태플릿, 모바일 모달창 -->
+        <div class="menu-container">
+            <div class="menu" role="dialog">
+                <div class="head">
+                    <h1><a href="index.html">chiikacha</a></h1>
+                    <div class="close" onkeydown="closeMoalHandlerEnter(event)" onclick="closeMoalHandlerClick()"
+                        role="button" tabindex="0">X</div>
+                </div>
+    
+                <section class="user">
+                    <div class="profile">
+                        <img src="./imgs/profile.png" alt="프로필 이미지">
+                    </div>
+                    <p>테스트</p>
+                </section>
+    
+                <ul class="menu-list">
+                    <li>
+                        <a href="mypage.html">
+                            <img src="./imgs/menu-컬렉션.png" alt="메뉴 이미지">
+                            <p>마이 페이지</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imgs/menu-게임.png" alt="메뉴 이미지">
+                            <p>게임하기</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./imgs/menu-수정.png" alt="메뉴 이미지">
+                            <p>프로필 수정</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/burgerMenu.js"></script>
+    <script type="text/javascript" src="./js/modal.js" defer></script>
+    <script type="text/javascript" src="./js/header.js" defer></script>
 </body>
+
 </html>
