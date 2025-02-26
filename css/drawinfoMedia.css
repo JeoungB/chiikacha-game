@@ -1,55 +1,12 @@
-@media all and (max-width: 641px) {
-    .item-probability li p {
-        line-height: 20px;
-    }
+
+/* 테블릿 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+
 }
 
-@media (max-width: 616px) {
-    .item-probability > li {
-        height: 500px;
-    }
-
-    .item-probability > li:nth-of-type(2) li{
-        margin-top: 20px;
-    }
-
-    .item-probability > li:not(:nth-of-type(2)) {
-        height: 300px;
-    }
-}
-
-@media (max-width: 549px) {
-    .item-probability li p {
-        min-width: 160px;
-    }
-}
-
-@media (max-width: 416px) {
-    .item-probability > li {
-        width: 230px;
-        height: 670px;
-    }
-
-    .item-probability > li:nth-of-type(2) li,
-    .item-probability > li:nth-of-type(5) li{
-        margin-top: 20px;
-    }
-
-    .item-probability > li:not(:nth-of-type(2)) {
-        height: 300px;
-    }
-
-    .item-probability > li:nth-child(5) {
-        height: 500px;
-    }
-}
-
-@media all and (max-width: 416px) {
+/* 모바일 */
+@media all and (max-width: 767px) {
     body {
-        font-size: 14px !important;
-    }
-
-    .item-probability li p {
-        min-width: 110px !important;
+        font-size: 14px;
     }
 }
