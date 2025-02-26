@@ -1,4 +1,4 @@
-@media screen and (max-width: 845px) {
+@media all and (max-width: 845px) {
     header > .header-container {
         padding: 0 10px 0 10px;
     }

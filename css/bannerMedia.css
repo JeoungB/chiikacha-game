@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 920px) {
+@media all and (max-width: 920px) {
     .slider-container {
         width: 100% !important;
     }
@@ -15,7 +15,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media all and (max-width: 390px) {
     .draw-container {
         width: 50%;
         min-width: 300px;

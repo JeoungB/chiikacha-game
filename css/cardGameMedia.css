@@ -8,7 +8,7 @@
 }
 
 /* 모바일 */
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
     .cardGame {
         width: 80vw;
         height: 67vw;
