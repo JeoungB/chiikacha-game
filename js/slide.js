@@ -34,8 +34,8 @@ const makeClone = () => {
 
 // 초기 슬라이드 위치.
 const setInitialPos = () => {
-    let initialTranslateValue = -slideWidth * slideCount;
-    $slider.style.transform = `translateX(${initialTranslateValue - 35}px)`;
+    let initialTranslateValue = (-slideWidth * slideCount) - (slideMargin * 2);
+    $slider.style.transform = `translateX(${initialTranslateValue}px)`;
 };
 
 // 슬라이드 움직임 범위.
